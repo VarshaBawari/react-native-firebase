@@ -158,7 +158,7 @@ export default {
       const fbSDKDep = `'com.google.firebase:firebase-${GRADLE_DEPS[
         namespace
       ] || namespace}'`;
-      const rnFirebasePackage = `'io.invertase.firebase.${namespace}.${nativeModule}Package'`;
+      const rnFirebasePackage = `'io.invertase.firebase.varsha.${namespace}.${nativeModule}Package'`;
       const newInstance = `'new ${nativeModule}Package()'`;
       return (
         `You attempted to use a firebase module that's not installed on your Android project by calling ${snippet}.` +

@@ -29,7 +29,7 @@
     <uses-library android:name="org.apache.http.legacy" android:required="false"/>  <!-- Add this line to avoid crashes on Android 9 until AdMob SDK update -->
 
     <service
-      android:name="io.invertase.firebase.messaging.RNFirebaseMessagingService"
+      android:name="io.invertase.firebase.varsha.messaging.RNFirebaseMessagingService"
       android:enabled="true"
       android:exported="true"
       tools:ignore="ExportedService">
@@ -39,18 +39,18 @@
     </service>
 
     <!--<service-->
-      <!--android:name="io.invertase.firebase.messaging.RNFirebaseInstanceIdService"-->
+      <!--android:name="io.invertase.firebase.varsha.messaging.RNFirebaseInstanceIdService"-->
       <!--android:exported="false">-->
       <!--<intent-filter>-->
         <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
       <!--</intent-filter>-->
     <!--</service>-->
 
-    <service android:name="io.invertase.firebase.messaging.RNFirebaseBackgroundMessagingService" />
+    <service android:name="io.invertase.firebase.varsha.messaging.RNFirebaseBackgroundMessagingService" />
 
-    <receiver android:name="io.invertase.firebase.notifications.RNFirebaseNotificationReceiver" />
+    <receiver android:name="io.invertase.firebase.varsha.notifications.RNFirebaseNotificationReceiver" />
     <receiver
-      android:name="io.invertase.firebase.notifications.RNFirebaseNotificationsRebootReceiver"
+      android:name="io.invertase.firebase.varsha.notifications.RNFirebaseNotificationsRebootReceiver"
       android:enabled="true"
       android:exported="true">
       <intent-filter>
